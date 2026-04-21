@@ -5,3 +5,9 @@
 
 # macOS
 .DS_Store
+
+# Node (not needed for this plain HTML project)
+node_modules/
+package-lock.json
+package.json
+
