@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sellixa — Turn Your Expertise Into Digital Products</title>
+  <meta name="description" content="Sellixa partners with creators to build branded ebooks and mini-courses. Zero upfront cost. You keep 75% of every sale.">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <a href="#" class="nav-logo">SELLIXA</a>
+    <div class="nav-links" id="navLinks">
+      <a href="#how-it-works">How It Works</a>
+      <a href="#creators">Creators</a>
+      <a href="#revenue">Revenue</a>
+      <a href="#services">Services</a>
+      <button class="nav-cta open-modal" id="navApplyBtn">Get Started</button>
+    </div>
+    <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260325_094440_a3592600-bd1e-49e5-9bce-a73662061d83.mp4" type="video/mp4">
+    </video>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <div class="hero-badge"><span class="dot"></span> Now Partnering With Creators</div>
+      <h1>Your Expertise.<br><span class="highlight">Our Engine.</span><br>Real Revenue.</h1>
+      <p>We turn your knowledge into premium digital products—ebooks, mini‑courses, and launch campaigns—completely free. You keep 75% of every sale.</p>
+      <div class="hero-buttons">
+        <button class="btn-primary open-modal" id="heroApplyBtn">Partner With Us <span>→</span></button>
+        <a href="#how-it-works" class="btn-secondary">See How It Works</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round"><path d="M12 5v14M19 12l-7 7-7-7"/></svg>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-item">Ebook Creation <span class="sep">◆</span></div>
+      <div class="marquee-item">Mini‑Course Design <span class="sep">◆</span></div>
+      <div class="marquee-item">Launch Scripts <span class="sep">◆</span></div>
+      <div class="marquee-item">Reel Campaigns <span class="sep">◆</span></div>
+      <div class="marquee-item">Email Sequences <span class="sep">◆</span></div>
+      <div class="marquee-item">Topic Research <span class="sep">◆</span></div>
+      <div class="marquee-item">Brand Design <span class="sep">◆</span></div>
+      <div class="marquee-item">Content Strategy <span class="sep">◆</span></div>
+      <div class="marquee-item">Ebook Creation <span class="sep">◆</span></div>
+      <div class="marquee-item">Mini‑Course Design <span class="sep">◆</span></div>
+      <div class="marquee-item">Launch Scripts <span class="sep">◆</span></div>
+      <div class="marquee-item">Reel Campaigns <span class="sep">◆</span></div>
+      <div class="marquee-item">Email Sequences <span class="sep">◆</span></div>
+      <div class="marquee-item">Topic Research <span class="sep">◆</span></div>
+      <div class="marquee-item">Brand Design <span class="sep">◆</span></div>
+      <div class="marquee-item">Content Strategy <span class="sep">◆</span></div>
+    </div>
+  </div>
+
+  <!-- HOW IT WORKS -->
+  <section id="how-it-works">
+    <div class="section-label reveal">The Process</div>
+    <div class="section-title reveal">Four Steps to <span class="highlight">Launch</span></div>
+    <p class="section-desc reveal">From idea to income—here's how Sellixa turns your expertise into a revenue‑generating digital product.</p>
+    <div class="steps-grid">
+      <div class="step-card reveal">
+        <div class="step-num">01</div>
+        <div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+        <h3>Research & Discovery</h3>
+        <p>We dive into your niche, identify what your audience craves, and pinpoint the most profitable topic for your first product.</p>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-num">02</div>
+        <div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+        <h3>Write & Structure</h3>
+        <p>Our team crafts every word—from chapter outlines to polished prose—while you review and add your personal touch.</p>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-num">03</div>
+        <div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg></div>
+        <h3>Design & Brand</h3>
+        <p>Stunning covers, layouts, and visuals that match your brand identity. Every product looks like it came from a top studio.</p>
+      </div>
+      <div class="step-card reveal">
+        <div class="step-num">04</div>
+        <div class="step-icon"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13"/><path d="M22 2L15 22l-4-9-9-4 20-7z"/></svg></div>
+        <h3>Launch & Sell</h3>
+        <p>We create Reel scripts, story templates, and email sequences—giving you a complete playbook to maximize sales from day one.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHO WE WORK WITH -->
+  <section id="creators">
+    <div class="section-label reveal">Our Creators</div>
+    <div class="section-title reveal">Built for <span class="highlight">Mid‑Size Creators</span></div>
+    <p class="section-desc reveal">Whether you teach, trade, code, or coach—if you've got an audience, we've got the playbook.</p>
+    <div class="carousel-wrapper reveal">
+      <button class="carousel-btn carousel-prev" data-carousel="creatorsTrack" aria-label="Previous"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <div class="carousel-viewport">
+        <div class="carousel-track" id="creatorsTrack">
+          <div class="creator-card">
+            <span class="card-number">01</span>
+            <span class="card-tag">Popular</span>
+            <div class="creator-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 7 13.5 15.5 8.5 10.5 2 17"/><polyline points="16 7 22 7 22 13"/></svg></div>
+            <h3>Traders</h3>
+            <p>Turn strategies, chart patterns, and market insights into premium trading guides and courses.</p>
+            <div class="card-meta"><span class="meta-dot"></span> 120+ creators partnered</div>
+          </div>
+          <div class="creator-card">
+            <span class="card-number">02</span>
+            <span class="card-tag">Trending</span>
+            <div class="creator-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/><line x1="9" y1="7" x2="16" y2="7"/><line x1="9" y1="11" x2="14" y2="11"/></svg></div>
+            <h3>Teachers</h3>
+            <p>Package your lesson plans, study materials, and teaching frameworks into digital products.</p>
+            <div class="card-meta"><span class="meta-dot"></span> 200+ creators partnered</div>
+          </div>
+          <div class="creator-card">
+            <span class="card-number">03</span>
+            <span class="card-tag hot">Hot</span>
+            <div class="creator-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/><line x1="14" y1="4" x2="10" y2="20"/></svg></div>
+            <h3>Coding Instructors</h3>
+            <p>Convert tutorials, bootcamp modules, and project walkthroughs into structured ebooks.</p>
+            <div class="card-meta"><span class="meta-dot"></span> 95+ creators partnered</div>
+          </div>
+          <div class="creator-card">
+            <span class="card-number">04</span>
+            <span class="card-tag">Growing</span>
+            <div class="creator-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="5" r="3"/><path d="M12 8v4"/><path d="M6.5 22v-4.5A3.5 3.5 0 0 1 10 14h4a3.5 3.5 0 0 1 3.5 3.5V22"/><path d="M9 18l3-3 3 3"/></svg></div>
+            <h3>Fitness Coaches</h3>
+            <p>Transform workout routines, nutrition plans, and coaching methods into branded products.</p>
+            <div class="card-meta"><span class="meta-dot"></span> 80+ creators partnered</div>
+          </div>
+          <div class="creator-card">
+            <span class="card-number">05</span>
+            <span class="card-tag">New</span>
+            <div class="creator-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg></div>
+            <h3>Marketing Experts</h3>
+            <p>Turn ad strategies, growth hacks, and branding frameworks into premium courses.</p>
+            <div class="card-meta"><span class="meta-dot"></span> 60+ creators partnered</div>
+          </div>
+          <div class="creator-card">
+            <span class="card-number">06</span>
+            <span class="card-tag">Rising</span>
+            <div class="creator-icon"><svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 7V5a4 4 0 0 0-8 0v2"/><circle cx="12" cy="14" r="2"/></svg></div>
+            <h3>Business Coaches</h3>
+            <p>Package consulting frameworks, SOPs, and business playbooks into sellable products.</p>
+            <div class="card-meta"><span class="meta-dot"></span> 45+ creators partnered</div>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-btn carousel-next" data-carousel="creatorsTrack" aria-label="Next"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></button>
+    </div>
+    <div class="carousel-dots" id="creatorsDots"></div>
+  </section>
+
+  <!-- REVENUE MODEL -->
+  <section id="revenue">
+    <video class="revenue-video" id="revenueVideo" autoplay muted loop playsinline></video>
+    <div class="revenue-overlay"></div>
+    <div class="section-label reveal">Revenue Split</div>
+    <div class="section-title reveal">You Keep <span class="highlight">75%</span> of Every Sale</div>
+    <p class="section-desc reveal">No upfront fees. No hidden costs. We only earn when your product sells.</p>
+    <div class="revenue-wrapper">
+      <div class="revenue-visual reveal">
+        <div class="donut-chart">
+          <div class="donut-center">
+            <div class="big">0%</div>
+            <div class="small">Creator Share</div>
+          </div>
+        </div>
+      </div>
+      <div class="revenue-legend reveal">
+        <div class="legend-item">
+          <div class="legend-dot creator"></div>
+          <div>
+            <h4>75% — Creator</h4>
+            <p>You keep the lion's share. Your name, your brand, your audience—your earnings. Products are sold under your identity.</p>
+          </div>
+        </div>
+        <div class="legend-item">
+          <div class="legend-dot sellixa"></div>
+          <div>
+            <h4>25% — Sellixa</h4>
+            <p>Our commission covers everything: research, writing, design, and launch strategy. We invest upfront so you don't have to.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services">
+    <div class="section-label reveal">What We Handle</div>
+    <div class="section-title reveal">End‑to‑End <span class="highlight">Product Studio</span></div>
+    <p class="section-desc reveal">You focus on your audience. We handle everything else.</p>
+    <div class="carousel-wrapper reveal">
+      <button class="carousel-btn carousel-prev" data-carousel="servicesTrack" aria-label="Previous"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="15 18 9 12 15 6"/></svg></button>
+      <div class="carousel-viewport">
+        <div class="carousel-track" id="servicesTrack">
+          <div class="service-card"><div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg></div><div class="svc-tag">Phase 1</div><h3>Topic Research</h3><p>Data-driven research to find the highest-demand, lowest-competition topics in your niche.</p><div class="svc-footer"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg> High-impact analysis</div></div>
+          <div class="service-card"><div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></div><div class="svc-tag">Phase 2</div><h3>Content Writing</h3><p>Professional ghostwriting that captures your voice and teaching style authentically.</p><div class="svc-footer"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2"><path d="M12 20h9"/><path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg> Expert ghostwriters</div></div>
+          <div class="service-card"><div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg></div><div class="svc-tag">Phase 3</div><h3>Product Design</h3><p>Stunning covers, layouts, and visual assets that make your product stand out.</p><div class="svc-footer"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/></svg> Studio-grade visuals</div></div>
+          <div class="service-card"><div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="23 7 16 12 23 17 23 7"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg></div><div class="svc-tag">Phase 4</div><h3>Reel &amp; Story Scripts</h3><p>Hook-driven scripts for Reels and stories to convert followers into buyers.</p><div class="svc-footer"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg> Viral-ready hooks</div></div>
+          <div class="service-card"><div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22 6 12 13 2 6"/></svg></div><div class="svc-tag">Phase 5</div><h3>Email Sequences</h3><p>Complete launch email campaigns optimized for maximum conversions.</p><div class="svc-footer"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg> Proven templates</div></div>
+          <div class="service-card"><div class="icon"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg></div><div class="svc-tag">Phase 6</div><h3>Launch Strategy</h3><p>A full go-to-market playbook with timelines and promotional tactics.</p><div class="svc-footer"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2"><path d="M22 2L11 13"/><path d="M22 2L15 22l-4-9-9-4 20-7z"/></svg> End-to-end playbook</div></div>
+        </div>
+      </div>
+      <button class="carousel-btn carousel-next" data-carousel="servicesTrack" aria-label="Next"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="9 18 15 12 9 6"/></svg></button>
+    </div>
+    <div class="carousel-dots" id="servicesDots"></div>
+  </section>
+
+  <!-- CTA -->
+  <!-- CTA -->
+  <section class="cta-section" id="cta">
+    <div class="cta-glow"></div>
+    <div class="section-label reveal">Ready to Launch?</div>
+    <div class="section-title reveal" style="position:relative;z-index:1;">Turn Your Knowledge Into<br><span class="highlight">Passive Income</span></div>
+    <p class="section-desc reveal" style="position:relative;z-index:1;margin:0 auto 40px;">No upfront cost. No risk. Just results. Apply now and let's build your first digital product together.</p>
+    <div class="reveal" style="position:relative;z-index:1;">
+      <button class="btn-primary open-modal" id="ctaApplyBtn" style="font-size:18px;padding:18px 48px;">Apply to Partner <span>→</span></button>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">SELLIXA</div>
+      <div class="footer-links">
+        <a href="#how-it-works">How It Works</a>
+        <a href="#creators">Creators</a>
+        <a href="#revenue">Revenue</a>
+        <a href="#services">Services</a>
+      </div>
+      <div class="footer-copy">© 2026 Sellixa. All rights reserved.</div>
+    </div>
+  </footer>
+
+  <!-- ── APPLY MODAL ── -->
+  <div class="modal-backdrop" id="modalBackdrop">
+    <div class="modal" id="applyModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+      <button class="modal-close" id="modalClose" aria-label="Close">✕</button>
+
+      <!-- Left panel -->
+      <div class="modal-left">
+        <div class="modal-badge">Zero Upfront Cost</div>
+        <h2 id="modalTitle">Let's Build Your<br><span class="highlight">First Product</span></h2>
+        <p>Fill in your details and our team will reach out within 24 hours with a custom plan for your niche.</p>
+        <div class="modal-perks">
+          <div class="perk"><span class="perk-icon">✅</span> No fees, ever</div>
+          <div class="perk"><span class="perk-icon">✅</span> You own 100% of your brand</div>
+          <div class="perk"><span class="perk-icon">✅</span> 75% revenue share on every sale</div>
+          <div class="perk"><span class="perk-icon">✅</span> Full launch support included</div>
+        </div>
+      </div>
+
+      <!-- Right panel — form -->
+      <div class="modal-right">
+        <form id="applyForm" novalidate>
+
+          <!-- Row 1 -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fullName">Full Name <span class="req">*</span></label>
+              <input type="text" id="fullName" name="fullName" placeholder="John Doe" required autocomplete="name">
+            </div>
+            <div class="form-group">
+              <label for="email">Email Address <span class="req">*</span></label>
+              <input type="email" id="email" name="email" placeholder="john@example.com" required autocomplete="email">
+            </div>
+          </div>
+
+          <!-- Row 2 -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="phone">Phone Number <span class="req">*</span></label>
+              <input type="tel" id="phone" name="phone" placeholder="+91 98765 43210" required autocomplete="tel">
+            </div>
+            <div class="form-group">
+              <label for="creatorType">Creator Type <span class="req">*</span></label>
+              <div class="select-wrap">
+                <select id="creatorType" name="creatorType" required>
+                  <option value="" disabled selected>Select your category</option>
+                  <option value="trader">📈 Trader / Finance</option>
+                  <option value="teacher">📚 Teacher / Educator</option>
+                  <option value="coding">💻 Coding Instructor</option>
+                  <option value="fitness">💪 Fitness Coach</option>
+                  <option value="marketing">📣 Marketing Expert</option>
+                  <option value="business">🏢 Business Coach</option>
+                  <option value="lifestyle">🌿 Lifestyle / Wellness</option>
+                  <option value="other">✨ Other</option>
+                </select>
+                <span class="select-arrow">▾</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Row 3 -->
+          <div class="form-row">
+            <div class="form-group">
+              <label for="followersRange">Followers Range <span class="req">*</span></label>
+              <div class="select-wrap">
+                <select id="followersRange" name="followersRange" required>
+                  <option value="" disabled selected>Select range</option>
+                  <option value="10k-25k">10K – 25K</option>
+                  <option value="25k-50k">25K – 50K</option>
+                  <option value="50k-100k">50K – 100K</option>
+                  <option value="100k-250k">100K – 250K</option>
+                  <option value="250k-500k">250K – 500K</option>
+                  <option value="500k-1m">500K – 1M</option>
+                  <option value="1m+">1M+</option>
+                </select>
+                <span class="select-arrow">▾</span>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="platform">Primary Platform <span class="req">*</span></label>
+              <div class="select-wrap">
+                <select id="platform" name="platform" required>
+                  <option value="" disabled selected>Where is your audience?</option>
+                  <option value="instagram">Instagram</option>
+                  <option value="youtube">YouTube</option>
+                  <option value="tiktok">TikTok</option>
+                  <option value="twitter">Twitter / X</option>
+                  <option value="linkedin">LinkedIn</option>
+                  <option value="telegram">Telegram</option>
+                  <option value="multiple">Multiple Platforms</option>
+                </select>
+                <span class="select-arrow">▾</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Message -->
+          <div class="form-group full-width">
+            <label for="message">Tell us about your expertise <span class="req">*</span></label>
+            <textarea id="message" name="message" rows="3" placeholder="What do you teach or create content about? What kind of product interests you?" required></textarea>
+          </div>
+
+          <button type="submit" class="btn-submit" id="submitBtn">
+            <span id="btnText">Submit Application →</span>
+            <span id="btnLoader" class="btn-loader" style="display:none"></span>
+          </button>
+
+          <div id="formStatus" class="form-status"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- SUCCESS POPUP -->
+  <div class="success-popup-backdrop" id="successPopup">
+    <div class="success-popup">
+      <div class="confetti-wrap" id="confettiWrap"></div>
+      <div class="popup-icon">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#F5C400" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+      </div>
+      <h3>You're <span>All Set!</span></h3>
+      <p>Your application has been submitted successfully. Our team will review it and reach out within <strong>24 hours</strong>.</p>
+      <button class="popup-close" id="popupCloseBtn">Awesome, Got It!</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
